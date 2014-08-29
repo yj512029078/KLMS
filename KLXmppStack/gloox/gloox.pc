@@ -1,0 +1,10 @@
+prefix=/home/yj/Work_Folder/Kunlun/gloox/Install_Dir/arm_depend_no_version_end_openssl_swig_debug
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: gloox
+Description: A high-level XMPP/Jabber library for C++
+Version: 1.0
+Libs: -L${libdir} -lgloox
+Cflags: -I${includedir}

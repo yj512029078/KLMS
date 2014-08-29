@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+environment/project/org.eclipse.cdt.cross.arm.gnu.linux.elf.debug.47823589/PATH/delimiter=\:
+environment/project/org.eclipse.cdt.cross.arm.gnu.linux.elf.debug.47823589/PATH/operation=replace
+environment/project/org.eclipse.cdt.cross.arm.gnu.linux.elf.debug.47823589/PATH/value=/home/yj/Work_DevelopeEnv/android8-toolchain/bin\:/opt/jdk/jdk1.6.0_45/bin\:/usr/lib/lightdm/lightdm\:/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/usr/games
+environment/project/org.eclipse.cdt.cross.arm.gnu.linux.elf.debug.47823589/append=true
+environment/project/org.eclipse.cdt.cross.arm.gnu.linux.elf.debug.47823589/appendContributed=true
