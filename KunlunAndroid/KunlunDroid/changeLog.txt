@@ -1,0 +1,32 @@
+------------ 18 Oct 2013
+------------
+Author:yj @sj
+
+结构变动：
+1、
+将原有的 com.neekle.kunlunandroid.presenter 包基于不同功能角色进行拆分，分为 
+com.neekle.kunlunandroid.presenter.interf
+com.neekle.kunlunandroid.presenter.impl
+com.neekle.kunlunandroid.presenter.common
+并对相关类或接口名进行修改
+
+2、
+拆分 com.neekle.kunlunandroid.xmpp 包，分为
+com.neekle.kunlunandroid.xmpp
+com.neekle.kunlunandroid.xmpp.data
+
+3、
+修改 com.neekle.kunlunandroid.xmpp 包对外暴露类，设计思路上有变化，具体为
+之前的做法是只对外暴露 XmppService，后面考虑到回调上来的接口比较多，全部通过 XmppService 中转给上层比较麻烦，
+故暴露 MyXmppCallback 和 XmppService。
+另外针对回调消息缓存的问题设计 XmppCbMsgManager 类，实现部分需要中转缓存的消息的缓存，随后由其通知给上层。
+
+4、
+com.neekle.kunlunandroid.util 包部分更改
+
+5、
+工程依赖的 KunlunDroid_WebserviceInvoke 工程。
+统一修改包名为 com.neekle.kunlunandroid.web.*
+
+新增 com.neekle.kunlunandroid.web.resolver 和 com.neekle.kunlunandroid.web.xml 包
+考虑按照功能角色区分，将原 com.neekle.kunlunandroid.web.presenter 下相关类分别移到以上对应包。

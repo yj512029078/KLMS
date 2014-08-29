@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/relati_top"
+            layout="@layout/cm_top_bar" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="1.0dip"
+            android:paddingRight="1.0dip" >
+
+            <RadioGroup
+                android:id="@+id/main_radio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio_dial"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/telephone_tab_item_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="8dip"
+                    android:paddingTop="8dip"
+                    android:text="@string/dial" />
+
+                <RadioButton
+                    android:id="@+id/radio_unanswer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/telephone_tab_item_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="8dip"
+                    android:paddingTop="8dip"
+                    android:text="@string/un_answer" />
+
+                <RadioButton
+                    android:id="@+id/radio_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/telephone_tab_item_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="8dip"
+                    android:paddingTop="8dip"
+                    android:text="@string/all" />
+            </RadioGroup>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</TabHost>

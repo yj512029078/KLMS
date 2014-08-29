@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navpage" >
+
+    <include
+        android:id="@+id/relati_top"
+        layout="@layout/cm_top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relati_top"
+        android:fillViewport="true"
+        android:scrollbars="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/relati_top_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="15dip" >
+
+                <RelativeLayout
+                    android:id="@+id/relati_need_to_be_invited_when_add_me_as_friend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cm_typical_item_bg"
+                    android:clickable="true"
+                    android:paddingBottom="8dip"
+                    android:paddingTop="8dip" >
+
+                    <TextView
+                        android:id="@+id/tv_need_to_be_invited_when_add_me_as_friend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/need_to_be_invited_when_add_me_as_friend"
+                        android:textColor="@color/lightgrey"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_need_to_be_invited_when_add_me_as_friend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/cm_checkbox_bg"
+                        android:checked="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relati_blasklist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/relati_top_info"
+                android:layout_alignRight="@id/relati_top_info"
+                android:layout_below="@id/relati_top_info"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/cm_typical_item_bg"
+                android:clickable="true"
+                android:paddingBottom="8dip"
+                android:paddingTop="8dip" >
+
+                <TextView
+                    android:id="@+id/tv_blasklist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/blasklist"
+                    android:textColor="@color/lightgrey"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_blasklist_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/more_identifier"
+                    android:textColor="@color/lightgrey"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relati_member_msg_will_be_shielded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/relati_top_info"
+                android:layout_alignRight="@id/relati_top_info"
+                android:layout_below="@id/relati_blasklist"
+                android:layout_marginTop="5dip"
+                android:paddingBottom="8dip"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:paddingTop="8dip" >
+
+                <TextView
+                    android:id="@+id/tv_member_msg_will_be_shielded"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/member_msg_will_be_shielded"
+                    android:textColor="@color/lightgrey"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relati_weibo_privacy_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/relati_top_info"
+                android:layout_alignRight="@id/relati_top_info"
+                android:layout_below="@id/relati_member_msg_will_be_shielded"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/cm_typical_item_bg"
+                android:clickable="true"
+                android:paddingBottom="8dip"
+                android:paddingTop="8dip" >
+
+                <TextView
+                    android:id="@+id/tv_weibo_privacy_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/weibo_privacy_setting"
+                    android:textColor="@color/lightgrey"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_weibo_privacy_setting_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/more_identifier"
+                    android:textColor="@color/lightgrey"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navpage" >
+
+    <include
+        android:id="@+id/relati_top"
+        layout="@layout/cm_top_bar" />
+
+    <LinearLayout
+        android:id="@+id/relati_descri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relati_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/main_team_name"
+            android:textColor="@color/lightgrey"
+            android:textSize="22sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/team"
+            android:textColor="@color/lightgrey"
+            android:textSize="32sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/software_version"
+            android:textColor="@color/lightgrey"
+            android:textSize="28sp"
+            android:textStyle="bold" >
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dip"
+        android:text="@string/copyright_reserved_by_sj_corporation"
+        android:textColor="@color/lightgrey"
+        android:textSize="22sp"
+        android:textStyle="bold" >
+    </TextView>
+
+</RelativeLayout>

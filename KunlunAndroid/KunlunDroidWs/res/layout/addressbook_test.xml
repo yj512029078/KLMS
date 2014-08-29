@@ -1,0 +1,138 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_addressbook_create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/addressbook_create" />
+
+        <Button
+            android:id="@+id/btn_addressbook_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/addressbook_delete" />
+
+        <Button
+            android:id="@+id/btn_addressbook_name_change"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/addressbook_name_change" />
+
+        <Button
+            android:id="@+id/btn_addressbook_item_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/addressbook_item_add" />
+
+        <Button
+            android:id="@+id/btn_addressbook_item_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/addressbook_item_delete" />
+
+        <Button
+            android:id="@+id/btn_addressbook_item_move"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:text="@string/addressbook_item_move" />
+
+        <Button
+            android:id="@+id/btn_addressbook_folder_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/addressbook_folder_delete" />
+
+        <Button
+            android:id="@+id/btn_addressbook_folder_rename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/addressbook_folder_rename" />
+
+        <Button
+            android:id="@+id/btn_addressbook_publish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/addressbook_publish" />
+
+        <Button
+            android:id="@+id/btn_addressbook_get"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/addressbook_get" />
+
+        <Button
+            android:id="@+id/btn_addressbook_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/addressbook_add" />
+
+        <Button
+            android:id="@+id/btn_addressbook_friend_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/addressbook_friend_delete" />
+
+        <Button
+            android:id="@+id/btn_addressbook_friend_rename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/addressbook_friend_rename" />
+
+        <Button
+            android:id="@+id/btn_addressbook_get_address_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/addressbook_get_address_listview" />
+    </LinearLayout>
+
+</ScrollView>

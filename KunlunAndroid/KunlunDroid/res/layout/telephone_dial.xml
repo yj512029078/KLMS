@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/lv_active_phone_contact"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/linear_dial_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="3dip"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relati_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip" >
+
+            <EditText
+                android:id="@+id/edittxt_input"
+                style="@style/MMEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1" />
+
+            <ImageView
+                android:id="@+id/imgv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/cm_imgbtn_del"
+                android:paddingBottom="10dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="10dip" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/relati_keyboard"
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            layout="@layout/telephone_dial_keyboard" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <include
+                android:id="@+id/screen_tab_dialer_button_video"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2px"
+                android:layout_weight="2"
+                layout="@layout/telephone_dial_keyboard_button_image" />
+
+            <include
+                android:id="@+id/screen_tab_dialer_button_audio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2px"
+                android:layout_weight="2"
+                layout="@layout/telephone_dial_keyboard_button_image" />
+
+            <include
+                android:id="@+id/screen_tab_dialer_button_hidden"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2px"
+                android:layout_weight="2"
+                layout="@layout/telephone_dial_keyboard_button_image" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" >
+
+        <RelativeLayout
+            android:id="@+id/relati_dial_call"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="@color/dark_green"
+            android:gravity="center"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip" >
+
+            <ImageView
+                android:id="@+id/imgv_dial_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/telephone_dial_call" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relati_dial_control_keyboard"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip" >
+
+            <ImageView
+                android:id="@+id/imgv_dial_control_keyboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/telephone_dial_control_keyboard" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

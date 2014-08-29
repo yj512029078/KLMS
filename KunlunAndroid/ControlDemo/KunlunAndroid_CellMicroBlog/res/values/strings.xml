@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KunlunDroid_CellMicroBlog</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="delete">删除</string>
+    <string name="forward">转发</string>
+    <string name="collect">收藏</string>
+    <string name="remark">评论</string>
+
+    <!-- controls CellMicroBlogView  section begin -->
+    <string name="cellmicroblog_make_phone_call">电话呼叫</string>
+    <string name="cellmicroblog_make_video_call">视频呼叫</string>
+    <string name="cellmicroblog_send_instant_msg">发送即时消息</string>
+    <string name="cellmicroblog_send_email">发送邮件</string>
+    <string name="cellmicroblog_add_as_friend">添加为朋友</string>
+    <string name="cellmicroblog_exclamation_mark">!</string>
+    <string name="cellmicroblog_item_split_line">---------------</string>
+    <!-- controls CellMicroBlogView  section begin -->
+
+</resources>

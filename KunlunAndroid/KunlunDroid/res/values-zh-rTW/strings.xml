@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- login.xml  section begin -->
+    <string name="main_login">登錄</string>
+    <string name="main_chat_use_wlan">WLAN聊天</string>
+    <string name="main_input_password">這裡輸入密碼</string>
+    <string name="main_remenber_password">記住密碼</string>
+    <string name="main_forget_password">忘記密碼</string>
+    <string name="main_auto_login">自動為我登陸</string>
+    <string name="main_register">註冊</string>
+    <string name="main_vertical_line">|</string>
+    <string name="main_set">設置</string>
+    <string name="main_product_short">TM</string>
+    <string name="main_team_name">Neekle</string>
+    <string name="main_team">Team</string>
+    <string name="main_invalid_jid">無效的用戶名</string>
+    <string name="main_passwd_should_not_null">密碼不能為空</string>
+    <string name="main_login_failed">登錄失敗</string>
+    <string name="main_is_loging">正在登錄</string>
+    <string name="please_set_server_address">請設置伺服器位址</string>
+    <string name="unable_to_get_valid_service">無法獲取有效的服務</string>
+    <!-- login.xml section end -->
+
+
+    <!-- login_setting.xml  section begin -->
+    <string name="forget_password">忘記密碼</string>
+    <string name="register_account">註冊帳號</string>
+    <string name="chat_use_wlan">WLAN聊天</string>
+    <!-- login_setting.xml  section end -->
+
+
+    <!-- software_setting.xml  section begin -->
+    <string name="software_setting">軟體設置</string>
+    <string name="server_address">伺服器地址</string>
+    <string name="delegate">代理</string>
+    <string name="not_use_delegate">不使用代理</string>
+    <string name="type">類型</string>
+    <string name="address">地址</string>
+    <string name="port">埠</string>
+    <string name="username">用戶名</string>
+    <string name="passwd">密碼</string>
+    <!-- software_setting.xml  section end -->
+
+
+    <!-- software_server_setting.xml  section begin -->
+    <string name="use_neek_msg_service_and_address_is">使用霓信服務，位址：</string>
+    <string name="use_your_own_server_and_address_is">使用您所在企業或組織的伺服器，位址：</string>
+    <!-- software_server_setting.xml  section end -->
+
+
+    <!-- telephone_tab.xml  section begin -->
+    <string name="dial">智能撥號</string>
+    <string name="all">全部</string>
+    <string name="un_answer">未接</string>
+
+    <!-- telephone_tab.xml  section end -->
+
+
+    <!-- addsbook.xml  section begin -->
+    <string name="addsbook_ellipsis">&#160;&#160;&#160;...&#160;&#160;&#160;</string>
+    <string name="addsbook_search_hint">搜索</string>
+    <string name="addsbook">連絡人</string>
+    <string name="addsbook_often_contact_person">星標連絡人</string>
+    <string name="my_cellphone">我的手機</string>
+    <string name="please_choose">請選擇</string>
+    <!-- temp section begin -->
+    <string name="often_contact_person_name">張三</string>
+    <!-- temp section end -->
+    <string-array name="friend_operation_items_filter">
+        <item>&#160;&#160;添加朋友</item>
+        <item>&#160;&#160;創建群</item>
+        <item>&#160;&#160;創建團隊</item>
+        <item>&#160;&#160;√只顯示朋友</item>
+    </string-array>
+    <string-array name="friend_operation_items_nofilter">
+        <item>&#160;&#160;添加朋友</item>
+        <item>&#160;&#160;創建群</item>
+        <item>&#160;&#160;創建團隊</item>
+        <item>&#160;&#160;√顯示所有</item>
+    </string-array>
+
+    <string name="add_friend">添加朋友</string>
+    <string name="create_huddle">創建群</string>
+    <string name="create_team">創建團隊</string>
+    <string name="show_friend">只顯示朋友</string>
+    <string name="show_all">顯示所有</string>
+
+    <!-- addsbook.xml  section begin -->
+
+
+    <!-- tel_voice.xml  section begin -->
+    <string name="no_fee_charge">不產生費用</string>
+    <string name="fee_charge_for_net">產生流量費用</string>
+    <string name="fee_charge_for_telecomm">產生通話費用</string>
+    <string name="click_to_record_audio">點擊錄音</string>
+    <string name="add_to_dial">添加撥號</string>
+    <string name="dial_keyboard">撥號鍵盤</string>
+    <string name="silent_voice">靜音</string>
+    <string name="phone_with_sb">與 “%1$s” 通話中</string>
+    <string name="hands_free">免提</string>
+    <string name="coming_call">來電</string>
+    <string name="in_the_call">通話中</string>
+    <string name="session_failed_as_invalid_session">會話失敗，無效的會話</string>
+    <string name="call_failed">呼叫失敗</string>
+    <string name="wifi">Wifi</string>
+    <string name="lte_3g">3g</string>
+    <!-- tel_voice.xml  section end -->
+
+
+    <!-- tel_video.xml  section begin -->
+    <string name="hangup_call">掛斷電話</string>
+    <string name="invite_video_call">邀請視頻通話</string>
+    <string name="video_with_sb"> “%1$s” - 視頻</string>
+    <!-- tel_video.xml  section end -->
+
+
+    <!-- tel_video.xml  section begin -->
+    <string name="network_unavailable">網路不可用</string>
+    <!-- tel_video.xml  section end -->
+
+
+    <!-- invite_add_friend.xml  section begin -->
+    <string name="invite_add_friend">邀請添加朋友</string>
+    <string name="friend_account_info_or_cell_number">朋友帳號或手機號</string>
+    <string name="friend_account_or_cell_hint">example@neeteam.com</string>
+    <string name="invite_info">邀請資訊</string>
+    <string name="send_invite_info">發邀請</string>
+    <string name="add_friend_success">添加好友成功</string>
+    <string name="invalid_account_please_input_again">無效的帳號，請重新輸入</string>
+    <string name="invite_add_friend_ellipsis">&#160;&#160;&#160;...&#160;&#160;&#160;</string>
+    <!-- invite_add_friend.xml  section begin -->
+
+
+    <!-- invite_friend_msg.xml  section begin -->
+    <string name="approve_be_invited">接受邀請</string>
+    <string name="refuse_be_invited">&#160;&#160;&#160;&#160;拒絕&#160;&#160;&#160;&#160;</string>
+    <string name="send_msg_to_him">發消息給他/她</string>
+    <string name="friend_invite_msg">朋友邀請消息</string>
+    <string name="invite_msg_has_been_sent">邀請消息已發送</string>
+    <string name="has_denied">已拒絕</string>
+    <string name="has_added">已添加</string>
+    <string name="i_have_approved_partner_invite">我接受了對方的邀請</string>
+    <string name="i_have_denied_partner_invite">我拒絕了對方的邀請</string>
+    <string name="you_have_send_ainvite_to">你發了一個邀請給</string>
+    <string name="refuse_your_invite">拒絕了你的邀請</string>
+    <string name="has_approved_your_invite_so_to_msg">接受你的邀請,你可以給他發消息了。</string>
+    <!-- invite_friend_msg.xml  section end -->
+
+
+    <!-- me_setting.xml  section begin -->
+    <string name="new_msg_warn">新消息提醒</string>
+    <string name="privacy">隱私</string>
+    <string name="general">通用</string>
+    <string name="network_traffic_statistics">流量統計</string>
+    <string name="new_msg_warn">新消息提醒</string>
+    <string name="about_the_team">關於Team</string>
+    <string name="exit_and_logout">退出登錄</string>
+    <!-- me_setting.xml  section end -->
+
+
+    <!-- me_setting_msg_remind.xml  section begin -->
+    <string name="rev_new_msg_remind">接收新消息通知</string>
+    <string name="new_msg_remind_sound">新消息提示音</string>
+    <string name="keep_pace_with_system">跟隨系統  ></string>
+    <string name="bg_msg_remind_time">後臺消息提醒時段</string>
+    <string name="function_msg_no_disturb">功能消息免打擾</string>
+    <string name="friends_weibo_update">朋友微博更新</string>
+    <string name="set_system_func_voice_and_vibrate">設置系統功能消息提示聲音和振動時間。</string>
+    <string name="after_shut_no_hint_show_on_weibo_icon">關閉後，有朋友更新微博時，首屏上的“微博”按鈕上不在出現紅點提示。</string>
+    <!-- me_setting_msg_remind.xml  section end -->
+
+
+    <!-- me_setting_privacy.xml  section begin -->
+    <string name="need_to_be_invited_when_add_me_as_friend">加我為朋友時需要邀請</string>
+    <string name="member_msg_will_be_shielded">Team將遮罩黑名單中連絡人的任何消息。 </string>
+    <string name="blasklist">黑名單</string>
+    <string name="weibo_privacy_setting">微博隱私設置</string>
+    <!-- me_setting_privacy.xml  section end -->
+
+
+    <!-- me_setting_blacklist.xml  section begin -->
+    <!-- me_setting_blacklist.xml  section end -->
+
+
+    <!-- me_setting_weibo_privacy.xml  section begin -->
+    <string name="not_see_their_weibo">不看他們的微博</string>
+    <string name="delete_temp_files">刪除暫存檔案</string>
+    <!-- me_setting_weibo_privacy.xml  section end -->
+
+
+    <!-- me_setting_general.xml  section begin -->
+    <string name="language">語言</string>
+    <string name="font_size">字體大小</string>
+    <string name="font_size_and_more">“%1$s”></string>
+    <string name="chat_bg">聊天背景</string>
+    <string name="function">功能</string>
+    <string name="team_web_version">Team網頁版</string>
+    <string name="clear_chat_history_record">清空聊天記錄</string>
+    <string name="small">小</string>
+    <string name="medium">中</string>
+    <string name="large">大</string>
+    <string name="very_large">超大</string>
+    <!-- me_setting_general.xml  section end -->
+
+
+    <!-- me_setting_chat_bg.xml  section begin -->
+    <string name="select_bg_pic">選擇背景圖</string>
+    <string name="select_from_phone_gallery">從手機相冊選擇</string>
+    <string name="apply_it_to_allchat_circumstance">將背景應用到所有聊天場景</string>
+    <string name="set_ok">設置成功</string>
+    <!-- me_setting_chat_bg.xml  section end -->
+
+
+    <!-- me_setting_about.xml  section begin -->
+    <string name="team">Team</string>
+    <string name="software_version">1.0</string>
+    <string name="copyright_reserved_by_sj_corporation">神計公司 版權所有2014年</string>
+    <!-- me_setting_about.xml  section end -->
+
+
+    <!-- message_chat.xml  section begin -->
+    <string name="send">發送</string>
+    <string name="network_unavailable">網路不可用</string>
+    <!-- message_chat.xml  section begin -->
+
+
+    <!-- contact_detail.xml  section begin -->
+    <string name="add_to_blacklist_success">添加黑名單成功</string>
+    <string name="add_to_blacklist_failure">添加黑名單失敗</string>
+    <string name="have_been_blacklist_member">已經是黑名單成員</string>
+    <string name="ws_login_fail">WS登陸失敗</string>
+    <string name="are_you_sure_to_delete_this_friend">您確定要刪除此朋友嗎？</string>
+    <string name="save_photo_ok">頭像保存成功</string>
+    <string name="test_signature_content">標籤內容</string>
+    <string name="test_male">男</string>
+    <string name="call">呼叫</string>
+    <string name="save_photo_to_addsbook">頭像保存到通訊錄</string>
+    <string name="personal_signature">個性標籤</string>
+    <string name="personal_photo_ablum">個人相冊</string>
+    <string name="sex">性別&#160;&#160;&#160;&#160;</string>
+    <string name="more_identifier">></string>
+    <string name="more">更多></string>
+    <string name="test_name">小明</string>
+    <string name="local_addsbook_info">本地通訊錄資訊:</string>
+    <string name="office">辦公室</string>
+    <string name="send_msg">發消息</string>
+    <string name="make_phone">打電話</string>
+    <string name="make_video">視頻</string>
+    <string name="edit">&#160;&#160;編輯&#160;&#160;</string>
+    <!-- contact_detail.xml  section end -->
+
+
+    <!-- contact_detail.xml  section begin -->
+    <string name="mark_or_unmark">加取消星標</string>
+    <string name="invite_as_friend">邀請為朋友</string>
+    <string name="add_to_blacklist">加入黑名單</string>
+    <string name="set_weibo_permission">設置微博許可權</string>
+    <string name="send_name_card">發送名片</string>
+
+    <!-- contact_detail.xml  section end -->
+
+
+    <!-- contact_detail_more.xml  section begin -->
+    <string name="update_contact_info_failed">更新連絡人資訊失敗</string>
+    <string name="update_contact_info_success">更新連絡人資訊成功</string>
+    <string name="get_contact_info_failed">獲取連絡人資訊失敗</string>
+    <string name="email">電子郵件</string>
+    <string name="mobile_phone">行動電話</string>
+    <string name="company_phone">公司電話</string>
+    <string name="department">部門</string>
+    <string name="home_phone">家庭電話</string>
+    <string name="fax">傳真</string>
+    <string name="personal_website">個人網址</string>
+    <string name="set_you_info">設置你的資訊</string>
+    <!-- contact_detail_more.xml  section end -->
+
+
+    <!-- common  section begin -->
+    <string name="correct_mark">√</string>
+    <string name="add">增加</string>
+    <string name="delete">刪除</string>
+    <string name="new_msg">新消息</string>
+    <string name="new_msg_hint">新消息提醒</string>
+    <string name="you_have_new_msg">您有新消息了</string>
+    <string name="sound">聲音</string>
+    <string name="vibrate">震動</string>
+    <string name="in_calling">呼叫中...</string>
+    <string name="hangup">掛斷</string>
+    <string name="get_through">接通</string>
+    <string name="refuse">拒絕</string>
+    <string name="telephone">電話</string>
+    <string name="input_invalid">輸入不合法</string>
+    <string name="complete">完成</string>
+    <string name="test">測試</string>
+    <string name="more_identifier">></string>
+    <string name="confirm_dialog_edittext_hint">說些什麼</string>
+    <string name="app_name">Kunlun</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="logout">退出</string>
+    <string name="please_wait">請稍候</string>
+    <string name="back">返回</string>
+    <string name="cancle">取消</string>
+    <string name="confirm">確定</string>
+    <string name="setting">設置</string>
+    <string name="ifly_voice_normal_id">51a9ec31</string>
+    <string name="network_error_please_check_it">網路異常，請檢查網路後重試</string>
+    <!-- common  section begin -->
+
+
+    <!-- main_screen  section begin -->
+    <!-- main_screen.xml -->
+
+    <string name="main_screen_title">Team</string>
+    <string name="main_screen_btn_string_publish">發佈</string>
+    <string name="main_screen_string_input">寫點什麼，分享給朋友</string>
+    <string name="main_screen_string_name_test">張韶涵</string>
+    <!-- main_screen_bg_menuitems.xml -->
+    <string name="menu_screen_bg_string_update_bg">更換背景</string>
+    <string name="menu_screen_bg_string_update_photo">更換頭像</string>
+    <string name="menu_screen_bg_string_exit">退出</string>
+    <!-- main_screen_camera_menuitems.xml -->
+    <string name="menu_screen_string_camera_takePhoto">拍照</string>
+    <string name="menu_screen_string_camera_getpic">從手機相冊中選擇</string>
+    <string name="menu_screen_string_camera_cancel">取消</string>
+    <!-- main_screen_gridview_model_item.xml -->
+    <string name="main_screen_string_message_num">3</string>
+    <string name="main_screen_string_feature_name">連絡人</string>
+    <!-- main_screen_photo_menuitems.xml -->
+    <string name="menu_screen_string_update_photo">更換頭像</string>
+    <string name="menu_screen_string_self_information">個人資料</string>
+    <string name="menu_screen_string_update_bg">更換背景</string>
+    <string name="menu_screen_string_exit">退出</string>
+    <string name="main_screen_net_warn_text">網路連接不可用，未能登錄</string>
+    <string name="main_screen_net_more_information">查看詳情</string>
+    <string name="main_screen_plus_msg">消息</string>
+    <string name="main_screen_plus_friend">朋友</string>
+    <string name="main_screen_plus_microBlog">微博</string>
+    <string name="main_screen_plus_phone">電話</string>
+    <string name="main_screen_plus_video">視頻電話</string>
+    <string name="main_screen_input_hint">發送內容不能為空</string>
+
+    <!-- main_screen  section end -->
+
+
+    <!-- option_setting  section begin -->
+    <!-- option_setting.xml begin -->
+    <string name="option_setting_string_selfinformation">個人資訊</string>
+    <string name="option_setting_string_mypic">我的相冊</string>
+    <string name="option_setting_string_maxcard">二維碼名片</string>
+    <string name="option_setting_string_myaccount">我的帳號</string>
+    <string name="option_setting_string_myaddressbook">手機通訊錄匹配</string>
+    <string name="option_setting_string_mymicroblog">微博</string>
+    <string name="option_setting_string_mychatbg">聊天背景</string>
+    <string name="option_setting_string_mygeneral">通用</string>
+    <string name="option_setting_string_myfunction">功能</string>
+    <string name="option_setting_string_myprivacy">隱私</string>
+    <string name="option_setting_string_trafficstatistics">流量統計</string>
+    <string name="option_setting_string_givegrade">給Team評分</string>
+    <string name="option_setting_string_aboutteam">關於Team</string>
+    <string name="option_setting_btnexit">退出登錄</string>
+    <!-- option_com_title_bar_two_part.xml section begin -->
+    <string name="option_top_title_btn_left">返回</string>
+    <string name="option_top_title">設置</string>
+    <!-- option_setting_feature.xml  section begin -->
+    <string name="option_setting_function_enablefunction">已啟用功能</string>
+    <string name="option_setting_function_stopfunction">未啟用功能</string>
+    <!-- option_setting_feature_setting.xml  section begin -->
+    <string name="option_setting_feature_setting_itemname">通訊錄目錄流覽</string>
+    <string name="option_setting_feature_setting_btnstop">停用</string>
+    <string name="option_setting_feature_setting_iteminfor">我能幫你安全備份手機通訊錄到雲端，你可以隨時回復手機連絡人到手機中。</string>
+
+    <!-- option_setting  section end -->
+
+    <string name="title_activity_huddle_chat_detailed_setting">HuddleChatDetailedSettingActivity</string>
+    <string name="title_activity_huddle_select_contact">HuddleSelectContactActivity</string>
+    <string name="title_activity_message_session">MessageSessionActivity</string>
+    <string name="title_activity_huddle_chat_name">HuddleChatNameActivity</string>
+    <string name="title_activity_huddle_chat_modify_nick_name">HuddleChatModifyNickNameActivity</string>
+    <string name="title_activity_huddle_search_record">HuddleSearchRecordActivity</string>
+
+    <!-- db:tb_ui_FeatureList表 section begin -->
+
+    <string name="feature_id_multimessage">MultiMessage</string>
+    <string name="feature_id_addressbook">AddressBook</string>
+    <string name="feature_id_phone">Phone</string>
+    <string name="feature_id_microblog">Microblog</string>
+    <string name="feature_id_feature">Feature</string>
+    <string name="feature_id_setting">Setting</string>
+    <string name="feature_id_huddle">Huddle</string>
+    <string name="feature_id_me">Me</string>
+    <string name="feature_showname_multimessage">消息</string>
+    <string name="feature_showname_addressbook">連絡人</string>
+    <string name="feature_showname_phone">電話</string>
+    <string name="feature_showname_microblog">微博</string>
+    <string name="feature_showname_feature">功能</string>
+    <string name="feature_showname_setting">設置</string>
+    <string name="feature_showname_huddle">群聊</string>
+    <string name="feature_showname_me">我</string>
+    <string name="feature_info_multimessage">消息消息消息消息消息消息消息消息消息消息消息消息消息消息消息消息</string>
+    <string name="feature_info_addressbook">通訊錄目錄流覽通訊錄目錄流覽通訊錄目錄流覽通訊錄目錄流覽</string>
+    <string name="feature_info_phone">電話相關介紹電話相關介紹電話相關介紹電話相關介紹電話相關介紹電話相關介紹</string>
+    <string name="feature_info_microblog">我能幫你安全備份手機通訊錄到雲端，你可以隨時回復手機連絡人到手機中。</string>
+    <string name="feature_info_feature">功能相關介紹功能相關介紹功能相關介紹功能相關介紹功能相關介紹功能相關介紹</string>
+    <string name="feature_info_setting">設置相關介紹設置相關介紹設置相關介紹設置相關介紹設置相關介紹設置相關介紹。</string>
+    <string name="feature_info_huddle">群聊相關群聊相關群聊相關群聊相關群聊相關群聊相關群聊相關群聊相關群聊相關。</string>
+    <string name="feature_info_me">我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我。</string>
+    <!-- db:tb_ui_FeatureList表   section end -->
+
+
+    <!-- OptionFeatureActivity section begin -->
+
+    <string name="option_feature_activity_title">功能</string>
+
+    <!-- OptionFeatureActivity section end -->
+
+
+    <!-- OptionFeatureSettingActivity section begin -->
+
+    <string name="option_feature_setting_activity_title">功能設置</string>
+    <string name="option_feature_setting_activity_enable">啟用</string>
+    <string name="option_feature_setting_activity_disable">停用</string>
+
+    <!-- OptionFeatureSettingActivity section end -->
+
+
+    <!-- MessageSessionActivity section begin -->
+
+    <string name="message_session_activity_title">消息</string>
+    <string name="message_session_activity_back">Team</string>
+    <string name="message_session_activity_search">搜索</string>
+    <string name="message_session_activity_net_warn_text">無法連接到伺服器，網路不可用</string>
+    <string name="message_session_activity_more_info">查看詳情</string>
+    <string name="message_session_activity_start_session">發起會話</string>
+    <string name="message_session_activity_load_page_version">登陸網頁版</string>
+    <string name="message_session_activity_import_msg">重要消息</string>
+    <!-- MessageSessionActivity section end -->
+
+
+    <!-- HuddleChatActivity section begin -->
+    <string name="huddle_chat_activity_huddle_title">群聊</string>
+    <string name="huddle_chat_activity_huddle_creating_title">未命名</string>
+    <string name="huddle_chat_activity_createroom_failed">創建房間失敗</string>
+    <string name="huddle_chat_activity_configroom_failed">配置房間失敗</string>
+
+    <!-- HuddleChatActivity section end -->
+
+
+    <!-- HuddleChatSettingActivity section begin -->
+
+    <string name="huddle_chat_setting_activity_huddle_suject">未命名</string>
+    <string name="huddle_chat_setting_activity_title">聊天設置</string>
+    <string name="huddle_chat_setting_activity_add_contacts">增加連絡人</string>
+    <string name="huddle_chat_setting_activity_del_contacts">刪除連絡人</string>
+    <string name="huddle_chat_setting_activity_exit_huddl_tips">刪除並退出後，將不再接受此群聊資訊！</string>
+    <string name="huddle_chat_setting_activity_confirm">確定</string>
+    <string name="huddle_chat_setting_activity_cancel">取消</string>
+    <string name="huddle_chat_setting_activity_huddle_subject_text">群聊名稱</string>
+    <string name="huddle_chat_setting_activity_huddle_subject">未命名</string>
+    <string name="huddle_chat_setting_activity_huddle_two_dimension_code_text">群二維碼</string>
+    <string name="huddle_chat_setting_activity_top_chat_text">置頂聊天</string>
+    <string name="huddle_chat_setting_activity_search_chat_records_text">查找聊天記錄</string>
+    <string name="huddle_chat_setting_activity_detailed_setting_text">詳細設置</string>
+    <string name="huddle_chat_setting_activity_exit">刪除並退出</string>
+
+    <!-- HuddleChatSettingActivity section end -->
+
+
+    <!-- HuddleChatDetailedSettingActivity section begin -->
+    <string name="huddlechatdetailedsettingactivity_title">詳細設置</string>
+    <string name="huddlechatdetailedsettingactivity_is_show_nickname_text">聊天中顯示群昵稱</string>
+    <string name="huddlechatdetailedsettingactivity_myhuddlenickname">我的群昵稱</string>
+    <string name="huddlechatdetailedsettingactivity_save_addressbook">保存到通訊錄</string>
+    <string name="huddlechatdetailedsettingactivity_close_notify">關閉新消息提醒</string>
+    <string name="huddlechatdetailedsettingactivity_set_chat_bg">設置當前聊天背景</string>
+    <string name="huddlechatdetailedsettingactivity_clear_records">清空聊天記錄</string>
+    <!-- huddle_menu_popwindow.xml section begin -->
+    <string name="huddle_menu_popwindow_is_confirm_clear">確定要清空聊天記錄嗎？</string>
+    <string name="huddle_menu_popwindow_confirm_clear">清空聊天記錄</string>
+    <string name="huddle_menu_popwindow_cancel_clear">取消</string>
+    <!-- huddle_menu_popwindow.xml section end -->
+    <!-- HuddleChatDetailedSettingActivity section end -->
+
+
+    <!-- com_title_bar_two_part.xml section begin -->
+
+    <string name="com_title_bar_two_part_back">返回</string>
+    <string name="com_title_bar_two_part_back_join_mem">參與人</string>
+
+    <!-- com_title_bar_two_part.xml section end -->
+
+
+    <!-- HuddleSelectContactActivity section begin -->
+    <string name="huddle_select_contact_activity_title">選連絡人</string>
+    <string name="huddle_select_contact_activity_confirm">確定(0)</string>
+    <string name="huddle_select_contact_activity_">返回</string>
+    <string name="huddle_select_contact_activity_select_hint">最多選擇一個連絡人！</string>
+    <!-- HuddleSelectContactActivity section end -->
+
+
+    <!-- 二維碼 -->
+    <string name="scan_text">將二維碼放入框內, 即可自動掃描</string>
+    <string name="title_activity_web_kunlun_login">WebKunlunLoginActivity</string>
+
+    <!-- web_kulun_login_activity.xml section begin -->
+
+    <string name="web_kunlun_login_activity_back">返回</string>
+    <string name="web_kunlun_login_activity_tip_one">即將在流覽器上登錄昆侖網頁版</string>
+    <string name="web_kunlun_login_activity_tip_two">請確認是否本人操作</string>
+    <string name="web_kunlun_login_activity_confirm">我確認登錄昆侖網頁版</string>
+    <string name="web_kunlun_login_activity_cancel">取消</string>
+    <!-- web_kulun_login_activity.xml section end -->
+
+
+    <!-- cellinputmessage section begin -->
+    <string name="cellinputmessage_chatting_send_text">發送</string>
+    <string name="cellinputmessage_chatting_edittext_hint_text">輸入消息</string>
+    <string name="cellinputmessage_chatting_send_speak_begin_text">按住 說話</string>
+    <string name="cellinputmessage_chatting_send_speak_over_text">鬆開 結束</string>
+    <string name="title_activity_cellinputmessage">CellInputMessageActivity</string>
+    <!-- cellinputmessage section begin -->
+
+
+    <!-- db:tb_chatinput_FeatureList表 section begin -->
+
+    <string name="feature_chatinput_id_emoji">emoji</string>
+    <string name="feature_chatinput_id_photo">photo</string>
+    <string name="feature_chatinput_id_phone">Phone</string>
+    <string name="feature_chatinput_id_vcall">vcall</string>
+    <string name="feature_chatinput_id_location">location</string>
+    <string name="feature_chatinput_id_importantmsg">importantMsg</string>
+    <string name="feature_chatinput_id_burn">burnafterreading</string>
+    <string name="feature_chatinput_showname_emoji">表情</string>
+    <string name="feature_chatinput_showname_photo">照片</string>
+    <string name="feature_chatinput_showname_phone">電話</string>
+    <string name="feature_chatinput_showname_vcall">視頻</string>
+    <string name="feature_chatinput_showname_location">位置</string>
+    <string name="feature_chatinput_showname_importantmsg">重要資訊</string>
+    <string name="feature_chatinput_showname_burn">閱後即焚</string>
+
+    <!-- db:tb_chatinput_FeatureList表   section end -->
+
+
+    <!-- input_view_attachment_activity  section begin -->
+
+    <string name="title_activity_input_view_attachment">InputViewAttachmentActivity</string>
+    <string name="input_view_attachment_title">添加工具</string>
+    <string name="input_view_attachment_enable_tool_title">已在附件欄裡</string>
+    <string name="input_view_attachment_enable_tip">此處的工具會顯示到附件欄</string>
+    <string name="input_view_attachment_disable_tool_title">可顯示到附件欄</string>
+    <string name="input_view_attachment_disable_tip">支援昆侖附件介面的工具將自動出現在這裡</string>
+
+    <!-- input_view_attachment_activity  section begin -->
+
+
+    <!-- input_view_attachment_des_activity  section begin -->
+
+    <string name="input_view_attachment_des_activity_title">工具簡介</string>
+    <string name="input_view_attachment_des_activity_top_back">返回</string>
+    <string name="input_view_attachment_des_activity_btn_del_text">從附件欄中移除</string>
+    <string name="input_view_attachment_des_activity_btn_add_text">加到附件欄中</string>
+    <string name="input_view_attachment_des_activity_item_name">Android應用</string>
+    <string name="input_view_attachment_des_activity_item_info">Android應用描述介紹Android應用描述介紹Android應用描述介紹Android應用描述介紹Android應用描述介紹</string>
+    <!-- input_view_attachment_des_activity  section begin -->
+
+
+    <!-- AlbumActivity  section begin -->
+    <string name="title_activity_album">AlbumActivity</string>
+    <string name="album_activity_title_btn_back">返回</string>
+    <string name="album_activity_title_btn_send">發送(0/9)</string>
+    <string name="album_activity_title_btn_preview">預覽</string>
+    <string name="album_activity_title_btn_complete"> 完 成 </string>
+    <!-- AlbumActivity  section begin -->
+
+
+    <!-- BucketActivity  section begin -->
+    <string name="title_activity_bucket">BucketActivity</string>
+    <string name="title_activity_image_preview">ImagePreviewActivity</string>
+    <string name="title_activity_camera_image_preview">CameraImagePreviewActivity</string>
+    <!-- BucketActivity  section begin -->
+
+
+    <!-- Sdcard  section begin -->
+
+    <string name="sdcard_tips">SDcard未掛載</string>
+
+    <!-- Sdcard  section begin -->
+
+
+    <!-- MapShowActivity  section begin -->
+    <string name="title_activity_map_show">MapShowActivity</string>
+    <string name="map_show_activity_location">位置</string>
+    <string name="map_show_activity_send">發送</string>
+    <string name="map_show_activity_scan_location">查看地理位置</string>
+    <string name="map_show_activity_location_failed">無法定位</string>
+    <!-- MapShowActivity  section end -->
+    <!-- MicroblogListActivity  section begin -->
+
+    <string name="title_activity_microblog_list">MicroblogListActivity</string>
+    <string name="microbloglist_activity_top_bar_left">Team</string>
+    <string name="microbloglist_activity_top_bar_title">微博</string>
+    <string name="microbloglist_activity_author">張韶涵</string>
+    <string name="microbloglist_activity_send_new_microblog">新發微博</string>
+    <string name="microbloglist_activity_scan_microblog_pic">流覽照片</string>
+    <string name="microbloglist_activity_blog_setting">設置</string>
+    <string name="microbloglist_activity_photo_menu_send_new_microblog">新發微博</string>
+    <string name="microbloglist_activity_photo_menu_scan_microblog">流覽微博</string>
+    <string name="microbloglist_activity_blog_photo_menu_setting">設置</string>
+    <!-- MicroblogListActivity  section end -->
+
+
+    <!-- MicroBlogWritingActivity  section begin -->
+    <string name="title_activity_micro_blog_writing">MicroBlogWritingActivity</string>
+    <string name="micro_blog_writing_activity_top_bar_back">返回</string>
+    <string name="micro_blog_writing_activity_top_bar_title">發佈我的微博</string>
+    <string name="micro_blog_writing_activity_publish_microblog"> 發 布 </string>
+    <string name="micro_blog_writing_activity_writing_hint">寫點什麼吧...</string>
+    <string name="micro_blog_writing_activity_start_record">開始錄音</string>
+    <string name="micro_blog_writing_activity_cancel_record">取消</string>
+    <string name="micro_blog_writing_activity_media_file_selected_hint">只能選擇發送一種多媒體檔</string>
+    <!-- MicroBlogWritingActivity  section end -->
+
+
+    <!-- MicroblogItemListActivity  section begin -->
+
+    <string name="title_activity_micro_blog_item_list">MicroBlogItemListActivity</string>
+    <string name="microblogitemlist_activity_top_bar_left">返回</string>
+    <string name="microblogitemlist_activity_top_bar_title">微博</string>
+
+    <!-- MicroblogItemListActivity  section end -->
+
+    <string name="title_activity_micro_blog_location">MicroBlogLocationActivity</string>
+
+    <!-- MicroblogVoiceActivity  section begin -->
+
+    <string name="title_activity_micro_blog_voice">MicroBlogVoiceActivity</string>
+    <string name="microblogvoiceactivity_back">返回</string>
+    <string name="microblogvoiceactivity_stop">停 止</string>
+    <string name="microblogvoiceactivity_publish">發 布</string>
+    <!-- MicroblogVoiceActivity  section end -->
+
+
+    <!-- MicroBlogScanPicActivity section begin -->
+
+    <string name="microblogscanpic_activity_top_bar_title">微博照片</string>
+    <string name="microblogscanpic_activity_time_format">    yyyy年MM月dd日</string>
+
+    <!-- MicroBlogScanPicActivity section end -->
+
+    <string name="title_activity_micro_blog_original_pic_scan">MicroBlogOriginalPicScanActivity</string>
+
+    <!-- UpdateApp section begin -->
+    <string name="update_app_title">更新應用程式</string>
+    <string name="update_app_check">檢查更新</string>
+    <string name="update_app_new_app_name">NewKunlunDroid.apk</string>
+    <string name="update_app_network_unavailable">網路不可用</string>
+    <string name="update_app_curr_version">當前版本</string>
+    <string name="update_app_check_result_no">已是最新版，無需更新！</string>
+    <string name="update_app_update_title">軟體更新</string>
+    <string name="update_app_confirm">確定</string>
+    <string name="update_app_cancel">取消</string>
+    <string name="update_app_update_available">發現新版本</string>
+    <string name="update_app_update_req">是否更新？</string>
+    <string name="update_app_update">更新</string>
+    <string name="update_app_not_update">暫不更新</string>
+    <string name="update_app_downloading">正在下載</string>
+    <string name="update_app_waiting">請稍後...</string>
+    <string name="update_app_downloaded">下載完成</string>
+    <string name="update_app_is_install">是否安裝新的應用</string>
+    <!-- UpdateApp section end -->
+
+
+    <!-- AccountRegisterActivity section begin -->
+    <!-- account_register_activity.xml section begin -->
+    <string name="account_reg_action_title">註冊Team帳號</string>
+    <string name="account_reg_give_up">放棄</string>
+    <string name="account_reg_next_step">下一步</string>
+    <string name="account_reg_submit">提交</string>
+    <!-- account_register_activity.xml section end -->
+
+
+    <!-- account_register_account.xml section begin -->
+    <string name="account_reg_team_account">Team帳戶名：</string>
+    <string name="account_reg_team_account_index">company.neecloud.com</string>
+    <string name="account_reg_password">密碼：</string>
+    <string name="account_reg_password_confirm">密碼確認：</string>
+    <string name="account_reg_alert_username">帳戶名不能為空！</string>
+    <string name="account_reg_alert_password">密碼不能為空！</string>
+    <string name="account_reg_alert_password_confirm">密碼確認不能為空！</string>
+    <string name="account_reg_alert_confirm_password">密碼不匹配，請重新輸入確認 </string>
+    <!-- account_register_activity.xml section end -->
+
+
+    <!-- account_register_confirm.xml section begin -->
+    <string name="account_reg_validation_code">驗證碼：</string>
+    <string name="account_reg_another">換一個</string>
+    <string name="account_reg_account">帳號：</string>
+    <string name="account_reg_eg_name">張三</string>
+    <string name="account_reg_eg_account">zhangsan@company.neecloud.com</string>
+    <string name="account_reg_alert_validae_code">驗證碼不能為空！</string>
+    <string name="account_reg_validae_code_picture_desc">ValidateCodePicture</string>
+    <!-- account_register_activity.xml section end -->
+
+
+    <!-- account_register_detail.xml section begin -->
+    <string name="account_reg_name">姓名：</string>
+    <string name="account_reg_sex">性別：</string>
+    <string name="account_reg_male">男</string>
+    <string name="account_reg_female">女</string>
+    <string name="account_reg_others">其他</string>
+    <string name="account_reg_personal_label">個性標籤：</string>
+    <string name="account_reg_alert_name">姓名不能為空！</string>
+    <string name="account_reg_alert_label">個性標籤不能為空！</string>
+    <!-- account_register_activity.xml section end -->
+
+
+    <!-- account_register_server_opt.xml section begin -->
+    <string name="account_reg_server_addr">伺服器地址</string>
+    <string name="account_reg_use_neekle_addr">使用霓信伺服器，位址：</string>
+    <string name="account_reg_use_company_addr">使用您所在企業或組織的伺服器，位址：</string>
+    <string name="account_reg_neekle_addr">neechat.com</string>
+    <string name="account_reg_company_addr">company.neecloud.com</string>
+    <string name="account_reg_success">註冊成功！</string>
+    <string name="account_reg_alert_server_address">伺服器位址不能為空！</string>
+    <string name="account_reg_alert_tip">資訊提示</string>
+    <!-- account_register_activity.xml section end -->
+    <!-- AccountRegisterActivity section end -->
+
+
+    <!-- me_activity.xml section begin -->
+    <string name="me_top_bar_title">我</string>
+    <string name="me_top_bar_back">Team</string>
+    <string name="me_name_tag">姓名</string>
+    <string name="me_username_tag">帳戶名</string>
+    <string name="me_my_album_tag">我的相冊</string>
+    <string name="me_my_favorities_tag">我的收藏</string>
+    <string name="me_setting_tag">設置</string>
+    <string name="me_more_arrow">></string>
+    <string name="me_iv_desc">description</string>
+    <!-- me_activity.xml section end -->
+
+
+    <!-- me_personal_info_activity.xml section begin -->
+    <string name="me_personal_info_top_bar_title">個人資訊</string>
+    <string name="me_personal_info_portrait_tag">頭像</string>
+    <string name="me_personal_info_name_tag">姓名</string>
+    <string name="me_personal_info_username_tag">我的帳號</string>
+    <string name="me_personal_info_qr_code_card_tag">二維碼名片</string>
+    <string name="me_personal_info_sex_tag">性別</string>
+    <string name="me_personal_info_sex_male">男</string>
+    <string name="me_personal_info_sex_female">女</string>
+    <string name="me_personal_info_sex_other">其他</string>
+    <string name="me_personal_info_label_tag">個性標籤</string>
+    <string name="me_personal_info_zone_tag">地區</string>
+    <!-- me_personal_info_activity.xml section end -->
+
+
+    <!-- me_my_account_activity.xml section begin -->
+    <string name="me_my_account_top_bar_title">我的帳號</string>
+    <string name="me_my_account_username_tag">帳號</string>
+    <string name="me_my_account_phone_tag">手機號</string>
+    <string name="me_my_account_sina_weibo_tag">新浪微博</string>
+    <string name="me_my_account_tencent_weibo_tag">騰訊微博</string>
+    <string name="me_my_account_weichat_tag">微信號</string>
+    <string name="me_my_account_mail_tag">郵箱</string>
+    <string name="me_my_account_unbind">未綁定</string>
+    <string name="me_my_account_bind">綁定</string>
+    <string name="me_my_account_surf_on_web">登錄網頁版</string>
+    <string name="me_my_account_confirm">確定</string>
+    <string name="me_my_account_cancel">取消</string>
+    <!-- me_my_account_activity.xml section end -->
+
+
+    <!-- me_qr_code_activity.xml section begin -->
+    <string name="me_qr_code_top_bar_title">二維碼名片</string>
+    <string name="me_qr_code_name_tag">name</string>
+    <string name="me_qr_code_username_tag">username</string>
+    <string name="me_qr_code_zone_tag">zone</string>
+    <string name="me_qr_code_back">返回</string>
+    <string name="me_qr_code_share">分享我的二維碼</string>
+    <string name="me_qr_code_save_on_sdcard">保存二維碼到手機</string>
+    <string name="me_qr_code_scan2add">掃一掃上面的二維碼圖片，加我</string>
+    <!-- me_qr_code_activity.xml section end -->
+
+</resources>

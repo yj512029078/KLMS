@@ -1,0 +1,196 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navpage" >
+
+    <include
+        android:id="@+id/relati_top"
+        layout="@layout/cm_top_bar" />
+
+    <RelativeLayout
+        android:id="@+id/relati_function_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relati_top"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="15dip" >
+
+        <RelativeLayout
+            android:id="@+id/relati_new_msg_warn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cm_typical_item_bg_top"
+            android:clickable="true"
+            android:paddingBottom="8dip"
+            android:paddingTop="8dip" >
+
+            <TextView
+                android:id="@+id/tv_new_msg_warn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:text="@string/new_msg_warn"
+                android:textColor="@color/lightgrey"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_new_msg_warn_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:text="@string/more_identifier"
+                android:textColor="@color/lightgrey"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relati_privacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relati_new_msg_warn"
+            android:background="@drawable/cm_typical_item_bg_mid"
+            android:clickable="true"
+            android:paddingBottom="8dip"
+            android:paddingTop="8dip" >
+
+            <TextView
+                android:id="@+id/tv_privacy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:text="@string/privacy"
+                android:textColor="@color/lightgrey"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_privacy_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:text="@string/more_identifier"
+                android:textColor="@color/lightgrey"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relati_general"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relati_privacy"
+            android:background="@drawable/cm_typical_item_bg_mid"
+            android:clickable="true"
+            android:paddingBottom="8dip"
+            android:paddingTop="8dip" >
+
+            <TextView
+                android:id="@+id/tv_general"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:text="@string/general"
+                android:textColor="@color/lightgrey"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_general_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:text="@string/more_identifier"
+                android:textColor="@color/lightgrey"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relati_network_traffic_statistics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relati_general"
+            android:background="@drawable/cm_typical_item_bg_bottom"
+            android:clickable="true"
+            android:paddingBottom="8dip"
+            android:paddingTop="8dip" >
+
+            <TextView
+                android:id="@+id/tv_network_traffic_statistics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:text="@string/network_traffic_statistics"
+                android:textColor="@color/lightgrey"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_network_traffic_statistics_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dip"
+                android:gravity="right"
+                android:text="@string/more_identifier"
+                android:textColor="@color/lightgrey"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relati_about_the_team"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/relati_function_section"
+        android:layout_alignRight="@id/relati_function_section"
+        android:layout_below="@id/relati_function_section"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/cm_typical_item_bg"
+        android:clickable="true"
+        android:paddingBottom="8dip"
+        android:paddingTop="8dip" >
+
+        <TextView
+            android:id="@+id/tv_about_the_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:text="@string/about_the_team"
+            android:textColor="@color/lightgrey"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_about_the_team_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dip"
+            android:text="@string/more_identifier"
+            android:textColor="@color/lightgrey"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/relati_function_section"
+        android:layout_alignRight="@id/relati_function_section"
+        android:layout_below="@id/relati_about_the_team"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="40dip"
+        android:background="@drawable/cm_btn_red_bg"
+        android:text="@string/exit_and_logout"
+        android:textSize="20sp" />
+
+</RelativeLayout>

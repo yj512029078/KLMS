@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_tel_going_hint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/relati_phone_indicator"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dip"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/imgv_phone_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/cm_tel_going_hint_indicator_3g" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relati_partner_info"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="2" >
+
+        <RelativeLayout
+            android:id="@+id/relati_partner_info_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" >
+
+            <TextView
+                android:id="@+id/txtv_network"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="WIFI"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imgv_partner_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_toRightOf="@id/txtv_network"
+                android:background="@drawable/cm_tel_going_hint_partner_photo_def" />
+
+            <TextView
+                android:id="@+id/txtv_session_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dip"
+                android:layout_toRightOf="@id/imgv_partner_photo"
+                android:text="通话中"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtv_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/txtv_session_state"
+                android:layout_below="@id/txtv_session_state"
+                android:layout_marginTop="50dip"
+                android:text="0:12"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtv_partner_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relati_partner_info_top"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dip"
+            android:text="章子怡"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtv_partner_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtv_partner_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dip"
+            android:text="浙江 义乌"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

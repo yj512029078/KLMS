@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/confirm_dialog_container_ll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/semitransparent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="30.0dip" >
+
+    <LinearLayout
+        style="@style/CmConfirmDialog"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/confirm_dialog_title_tv"
+                style="@style/CmConfirmDialogTitle"
+                android:text="title" />
+
+            <ImageView
+                android:id="@+id/confirm_dialog_title_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/dark_green" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"
+                android:orientation="horizontal"
+                android:paddingLeft="8.0dip"
+                android:paddingRight="8.0dip"
+                android:visibility="gone" >
+
+                <ScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0" >
+
+                    <TextView
+                        android:id="@+id/confirm_dialog_message_tv"
+                        style="@style/CmConfirmDialogMessage"
+                        android:layout_marginTop="0.0dip"
+                        android:ellipsize="end"
+                        android:maxHeight="96.0dip"
+                        android:maxLines="6"
+                        android:paddingTop="16.0dip"
+                        android:text="message" />
+                </ScrollView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/confirm_dialog_source_tv"
+                style="@style/CmConfirmDialogSource"
+                android:text="@string/set_you_info" />
+
+            <EditText
+                android:id="@+id/confirm_dialog_text_et"
+                style="@style/CmConfirmDialogEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/mm_alert_btn_divider"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginTop="16.0dip"
+            android:background="@color/cm_confirm_dialog_devider_color" />
+
+        <include layout="@layout/cm_confirm_dialog_footer" />
+    </LinearLayout>
+
+</LinearLayout>

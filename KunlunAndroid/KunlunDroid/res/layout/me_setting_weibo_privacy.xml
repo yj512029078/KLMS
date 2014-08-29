@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navpage" >
+
+    <include
+        android:id="@+id/relati_top"
+        layout="@layout/cm_top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relati_top"
+        android:fillViewport="true"
+        android:scrollbars="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/relati_not_see_their_weibo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/cm_typical_item_bg"
+                android:clickable="true"
+                android:paddingBottom="8dip"
+                android:paddingTop="8dip" >
+
+                <TextView
+                    android:id="@+id/tv_not_see_their_weibo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/not_see_their_weibo"
+                    android:textColor="@color/lightgrey"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_not_see_their_weibo_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/more_identifier"
+                    android:textColor="@color/lightgrey"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relati_delete_temp_files"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/relati_not_see_their_weibo"
+                android:layout_alignRight="@id/relati_not_see_their_weibo"
+                android:layout_below="@id/relati_not_see_their_weibo"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/cm_typical_item_bg"
+                android:clickable="true"
+                android:paddingBottom="8dip"
+                android:paddingTop="8dip" >
+
+                <TextView
+                    android:id="@+id/tv_delete_temp_files"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/delete_temp_files"
+                    android:textColor="@color/lightgrey"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

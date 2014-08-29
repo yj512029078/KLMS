@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KunlunDroid_WebserviceInvokeAndUInitTest</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="login">登录</string>
+    <string name="friend">朋友</string>
+    <string name="addressbook">通讯录</string>
+    <string name="circle">圈子</string>
+    
+    <string name="addressbook_create">新建通讯录</string>
+    <string name="addressbook_delete">删除通讯录</string>
+    <string name="addressbook_name_change">通讯录更名</string>
+    <string name="addressbook_item_add">添加条目</string>
+    <string name="addressbook_item_delete">删除条目</string>
+    <string name="addressbook_item_move">移动条目</string>
+    <string name="addressbook_folder_delete">删除文件夹</string>
+    <string name="addressbook_folder_rename">更名文件夹</string>
+    <string name="addressbook_publish">通讯录发布</string>
+    <string name="addressbook_get">获取通讯录</string>
+    <string name="addressbook_add">添加朋友通讯录</string>
+    <string name="addressbook_friend_delete">移除朋友通讯录</string>
+    <string name="addressbook_friend_rename">更名朋友通讯录</string>
+    <string name="addressbook_get_address_listview">获得通讯录列表</string>
+    
+    <string name="friend_add">添加好友</string>
+    <string name="friend_delete">删除好友</string>
+    <string name="friend_group_delete">删除朋友组</string>
+    <string name="friend_group_rename">更改朋友组名</string>
+    <string name="friend_change_group">更改朋友的组</string>
+    <string name="friend_add_group">将朋友加入组</string>
+    <string name="friend_get_friends_crc">获取朋友列表信息CRC</string>
+    <string name="friend_get_list">获取朋友列表</string>
+    <string name="friend_infor_get">获取朋友详细信息</string>
+    <string name="friend_infor_update">修改朋友详细信息</string>
+    <string name="friend_addsbook_get">获取朋友通讯录</string>
+    <string name="friend_sync">同步朋友列表</string>
+    <string name="friend_upload_mrulist">上传经常联系人列表</string>
+    <string name="friend_get_mrulist">获取经常联系人列表</string>
+    
+    <string name="circle_create">创建圈子</string>
+    <string name="circle_delete">删除圈子</string>
+    <string name="circle_attribute">圈子属性</string>
+    <string name="circle_table_setup">圈子之表设置</string>
+    <string name="circle_column_setup">圈子之列设置</string>
+    <string name="circle_pubsub_setup">圈子之发布订阅设置</string>
+    <string name="circle_friend_circle_setup">朋友的圈子设置</string>
+    <string name="circle_get_list">获取圈子列表</string>
+
+</resources>

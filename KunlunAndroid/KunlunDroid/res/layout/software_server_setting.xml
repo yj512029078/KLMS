@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:kunlun="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/relati_top"
+        layout="@layout/cm_top_bar" />
+
+    <RelativeLayout
+        android:id="@+id/relati_use_neekle_service_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relati_top"
+        android:layout_marginTop="20dip"
+        android:clickable="true"
+        android:paddingBottom="8dip"
+        android:paddingTop="8dip" >
+
+        <RadioButton
+            android:id="@+id/rbtn_use_neekle_service_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:text="@string/use_neek_msg_service_and_address_is"
+            android:textColor="@color/lightgrey"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/editxt_use_neekle_service_address"
+            style="@style/MMEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/rbtn_use_neekle_service_address"
+            android:layout_below="@id/rbtn_use_neekle_service_address"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="5dip"
+            android:textColor="@color/lightgrey"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relati_use_your_own_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relati_use_neekle_service_address"
+        android:layout_marginTop="10dip"
+        android:clickable="true"
+        android:paddingBottom="8dip"
+        android:paddingTop="8dip" >
+
+        <RadioButton
+            android:id="@+id/rbtn_use_your_own_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:text="@string/use_your_own_server_and_address_is"
+            android:textColor="@color/lightgrey"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/editxt_use_your_own_address"
+            style="@style/MMEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/rbtn_use_your_own_address"
+            android:layout_below="@id/rbtn_use_your_own_address"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="5dip"
+            android:textColor="@color/lightgrey"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

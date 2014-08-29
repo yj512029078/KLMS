@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/btn_cancle"
+        android:layout_width="0.0dip"
+        android:layout_height="48.0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/cm_confirm_dialog_footer_btn_bg"
+        android:text="@string/cancle"
+        android:textColor="@color/white"
+        android:textSize="16.0dip" />
+
+    <ImageView
+        android:id="@+id/imgv_divider"
+        android:layout_width="1.0dip"
+        android:layout_height="fill_parent"
+        android:background="@color/cm_confirm_dialog_devider_color" />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="0.0dip"
+        android:layout_height="48.0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/cm_confirm_dialog_footer_btn_bg"
+        android:text="@string/confirm"
+        android:textColor="@color/white"
+        android:textSize="16.0dip" />
+
+</LinearLayout>

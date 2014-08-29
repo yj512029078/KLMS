@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/navpage" >
+
+    <include
+        android:id="@+id/relati_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/cm_top_bar" />
+
+    <include
+        android:id="@+id/linear_tel_going_hint"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relati_top"
+        android:layout_marginTop="40dip"
+        layout="@layout/cm_tel_going_hint" />
+
+    <include
+        android:id="@+id/relati_tel_do_operation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_tel_going_hint"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="60dip"
+        layout="@layout/cm_tel_do_operation" />
+
+</RelativeLayout>

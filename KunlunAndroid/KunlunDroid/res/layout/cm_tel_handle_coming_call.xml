@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_tel_handle_coming_call"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/relati_tel_handle_coming_call_rev"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/cm_tel_handle_coming_call_rev"
+        android:clickable="true"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip" >
+
+        <TextView
+            android:id="@+id/txtv_add_to_dial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/get_through"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:layout_weight="0.1" />
+
+    <RelativeLayout
+        android:id="@+id/relati_tel_handle_coming_call_refuse"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_weight="1"
+        android:background="@drawable/cm_tel_handle_coming_call_refuse"
+        android:clickable="true"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip" >
+
+        <TextView
+            android:id="@+id/txtv_dial_keyboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/refuse"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

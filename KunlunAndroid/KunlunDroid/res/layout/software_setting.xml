@@ -1,0 +1,241 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:kunlun="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/relati_top"
+        layout="@layout/cm_top_bar" />
+
+    <RelativeLayout
+        android:id="@+id/relati_server_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relati_top"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/cm_typical_item_bg"
+        android:clickable="true"
+        android:paddingBottom="8dip"
+        android:paddingTop="8dip" >
+
+        <TextView
+            android:id="@+id/tv_server_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:text="@string/server_address"
+            android:textColor="@color/lightgrey"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_server_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dip"
+            android:text="@string/more_identifier"
+            android:textColor="@color/lightgrey"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_delegate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relati_server_address"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="40dip"
+        android:text="@string/delegate"
+        android:textColor="@color/lightgrey"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/relati_delegate_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/relati_server_address"
+        android:layout_alignRight="@id/relati_server_address"
+        android:layout_below="@id/tv_delegate"
+        android:layout_marginTop="3dip"
+        android:background="@drawable/cm_typical_item_bg" >
+
+        <RelativeLayout
+            android:id="@+id/relati_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:paddingBottom="8dip"
+            android:paddingTop="8dip" >
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:text="@string/type"
+                android:textColor="@color/lightgrey"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_type_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:text="@string/more_identifier"
+                android:textColor="@color/lightgrey"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relati_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relati_type"
+            android:clickable="true"
+            android:paddingBottom="8dip"
+            android:paddingTop="8dip" >
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:text="@string/address"
+                android:textColor="@color/lightgrey"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_address_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:text="@string/more_identifier"
+                android:textColor="@color/lightgrey"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relati_port"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relati_address"
+            android:clickable="true"
+            android:paddingBottom="8dip"
+            android:paddingTop="8dip" >
+
+            <TextView
+                android:id="@+id/tv_port"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:text="@string/port"
+                android:textColor="@color/lightgrey"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_port_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:text="@string/more_identifier"
+                android:textColor="@color/lightgrey"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relati_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relati_port"
+            android:clickable="true"
+            android:paddingBottom="8dip"
+            android:paddingTop="8dip" >
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:text="@string/username"
+                android:textColor="@color/lightgrey"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_username_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:text="@string/more_identifier"
+                android:textColor="@color/lightgrey"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relati_passwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relati_username"
+            android:clickable="true"
+            android:paddingBottom="8dip"
+            android:paddingTop="8dip" >
+
+            <TextView
+                android:id="@+id/tv_passwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:text="@string/passwd"
+                android:textColor="@color/lightgrey"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_passwd_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:text="@string/more_identifier"
+                android:textColor="@color/lightgrey"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relati_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relati_passwd"
+            android:clickable="true"
+            android:paddingBottom="8dip"
+            android:paddingTop="8dip" >
+
+            <Button
+                android:id="@+id/btn_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dip"
+                android:layout_marginRight="12dip"
+                android:text="@string/test"
+                android:textColor="@color/lightgrey"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

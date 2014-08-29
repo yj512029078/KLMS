@@ -1,0 +1,126 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="MMEditText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColorHint">@color/lightgrey</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/cm_input_view_mm_edit</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- <item name="android:minHeight">43.0dip</item> -->
+
+
+    <!-- contact_detail_bottom_popmenu.xml begin -->
+    <style name="ContactDetailBottomPopupMenuAnim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/contact_detail_bottom_popmenu_push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/contact_detail_bottom_popmenu_push_bottom_out</item>
+    </style>
+    <!-- contact_detail_bottom_popmenu.xml end -->
+
+    <style name="CmConfirmDialogTitle">
+        <item name="android:textSize">17.0dip</item>
+        <item name="android:textColor">@color/dark_green</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">64.0dip</item>
+        <item name="android:layout_marginLeft">16.0dip</item>
+        <item name="android:layout_marginRight">16.0dip</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="CmConfirmDialogMessage">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">@color/dark_white</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">8.0dip</item>
+        <item name="android:layout_marginTop">16.0dip</item>
+        <item name="android:layout_marginRight">16.0dip</item>
+    </style>
+
+    <style name="CmConfirmDialogSource">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">@color/dark_white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">16.0dip</item>
+        <item name="android:layout_marginTop">8.0dip</item>
+        <item name="android:layout_marginRight">16.0dip</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="CmConfirmDialogEditText" parent="@android:style/Widget.EditText">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/cm_confirm_dialog_edittext_bg</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">16.0dip</item>
+        <item name="android:layout_marginTop">16.0dip</item>
+        <item name="android:layout_marginRight">16.0dip</item>
+        <item name="android:maxHeight">50.0dip</item>
+        <item name="android:hint">@string/confirm_dialog_edittext_hint</item>
+    </style>
+
+    <style name="CmConfirmDialog">
+        <item name="android:background">@drawable/cm_confirm_dialog_bg</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="telephone_tab_bottom">
+        <item name="android:textSize">9.0sp</item>
+        <item name="android:textColor">#ff404142</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:paddingBottom">1.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginTop">2.0dip</item>
+        <item name="android:layout_marginBottom">1.0dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">-3.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="MeMyAccountDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/cm_confirm_dialog_bg</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+     </style>
+
+    <style name="MyProgressBarHorizontal" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@android:drawable/progress_horizontal</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+
+</resources>

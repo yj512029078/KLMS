@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">  
+    <item  
+        android:state_pressed="false"  
+        android:drawable="@drawable/net_warn_background">  
+    </item>  
+    <item  
+        android:state_pressed="true"  
+        android:drawable="@drawable/net_warn_background_click">  
+    </item>  
+    <item  
+        android:state_window_focused="false"  
+        android:drawable="@drawable/net_warn_background">  
+    </item>   
+</selector>

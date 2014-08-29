@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- argb, a means transpancy, if a=0, means fully transparent, then other value will be meaningless -->
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="red">#ffff0000</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="light_blue">#0033CC</color>
+    <color name="half_alpha_black">#7f0000</color>
+    <color name="dark_alpha_black">#cc0000</color>
+    <color name="darkgrey">#ff404040</color>
+    <color name="toasterro">#ff9fd524</color>
+    <color name="lightgrey">#ff888888</color>
+    <color name="light_grey">#ffe0e0e0</color>
+    <color name="violet">#cbcdfd</color>
+    <color name="navpage">#ffe1e0de</color>
+    <color name="semitransparent">#4d000000</color>
+    <color name="dark_green">#ff00ff00</color>
+    <color name="dark_green">#ff45c01a</color>
+    <color name="dark_white">#ff818282</color>
+    <color name="color_dark">#161C27</color>
+    <color name="color_light">#4D6288</color>
+    <color name="gold">#ffd700</color>
+
+    <!-- erweima -->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+    <!-- cm_confirm_dialog begin -->
+    <color name="cm_confirm_dialog_devider_color">#ff282a2b</color>
+
+    <item name="cm_confirm_dialog_footer_btn_pressed_bg" type="color">@color/cm_confirm_dialog_devider_color</item>
+    <!-- cm_confirm_dialog end -->
+
+</resources>

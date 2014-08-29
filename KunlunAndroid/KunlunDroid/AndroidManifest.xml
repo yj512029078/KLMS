@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.neekle.kunlunandroid"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1.0.1" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- qrcode -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!--  往SDCard写入数据权限  -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
+    <!-- baidu map -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+
+    <application
+        android:name="com.neekle.kunlunandroid.screens.KunlunApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/cm_ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme" >
+        <service android:name="com.neekle.kunlunandroid.sip.NativeService" >
+        </service>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="AjuLGVW9o8FSBwkb3Tk8ad66" />
+
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.LoginSettingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.SoftwareSettingActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.SoftwareServerSettingActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.MainScreenActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.AddsbookActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.AddsbookOrgActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.TelephoneTabActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.TelephoneDialActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.TelephoneUnAnswerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.TelephoneAllActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.TelVoiceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.TelVideoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.InviteAddFriendActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.InviteFriendMsgActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.ContactDetailActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.ContactDetailMoreActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.MeSettingActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.MeSettingMsgRemindActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.MeSettingPrivacyActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.MeSettingGeneralFontSizeActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.MeSettingGeneralChatBgActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.MeSettingGeneralChatBgSelectActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.MeSettingWeiboPrivacyActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.MeSettingWeiboPrivacyNotSeeActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.MeSettingBlacklistActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.MeSettingGeneralActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.MeSettingAboutTeamActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.MessageChatActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name="com.neekle.kunlunandroid.screens.OptionFeatureSettingActivity" >
+        </activity>
+        <activity android:name="com.neekle.kunlunandroid.screens.OptionSettingActivity" >
+        </activity>
+        <activity android:name="com.neekle.kunlunandroid.screens.OptionFeatureActivity" >
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.HuddleChatActvity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity android:name="com.neekle.kunlunandroid.screens.HuddleChatSettingActivity" />
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.HuddleChatDetailedSettingActivity"
+            android:label="@string/title_activity_huddle_chat_detailed_setting" >
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.SelectContactActivity"
+            android:label="@string/title_activity_huddle_select_contact" >
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.MessageSessionActivity"
+            android:label="@string/title_activity_message_session"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.HuddleChatNameActivity"
+            android:label="@string/title_activity_huddle_chat_name" >
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.HuddleChatModifyNickNameActivity"
+            android:label="@string/title_activity_huddle_chat_modify_nick_name" >
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.HuddleSearchRecordActivity"
+            android:label="@string/title_activity_huddle_search_record" >
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.QrCodeScanActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.WebKunlunLoginActivity"
+            android:label="@string/title_activity_web_kunlun_login" >
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.CellInputMessageActivity"
+            android:label="@string/title_activity_cellinputmessage" >
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.InputViewAttachmentActivity"
+            android:label="@string/title_activity_input_view_attachment" >
+        </activity>
+        <activity android:name="com.neekle.kunlunandroid.screens.InputViewAttachmentDesActivity" >
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.pic.AlbumActivity"
+            android:label="@string/title_activity_album" >
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.pic.BucketActivity"
+            android:label="@string/title_activity_bucket" >
+        </activity>
+        <activity android:name="com.neekle.kunlunandroid.pic.SelectedImagePreviewActivity" >
+        </activity>
+        <activity android:name="com.neekle.kunlunandroid.pic.ImagePreviewActivity" >
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.pic.CameraImagePreviewActivity"
+            android:label="@string/title_activity_camera_image_preview" >
+        </activity>
+        <activity android:name="com.neekle.kunlunandroid.view.controls.cellOneMessage.CellOneMessage_ShowImageActivity" >
+        </activity>
+
+        <service
+            android:name="com.neekle.kunlunandroid.services.AutoConnectService"
+            android:exported="true" >
+        </service>
+        <service
+            android:name="com.neekle.kunlunandroid.web.webservices.WebserviceIntentService"
+            android:enabled="true" >
+        </service>
+
+        <activity
+            android:name="com.neekle.kunlunandroid.map.MapShowActivity"
+            android:label="@string/title_activity_map_show" >
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.MicroblogListActivity"
+            android:label="@string/title_activity_microblog_list" >
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.MicroBlogWritingActivity"
+            android:label="@string/title_activity_micro_blog_writing" >
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.MicroBlogItemListActivity"
+            android:label="@string/title_activity_micro_blog_item_list" >
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.MicroBlogLocationActivity"
+            android:label="@string/title_activity_micro_blog_location" >
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.MicroBlogVoiceActivity"
+            android:label="@string/title_activity_micro_blog_voice" >
+        </activity>
+        <activity android:name="com.neekle.kunlunandroid.screen.microblogpic.MicroBlogScanPicActivity" >
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.MicroBlogOriginalPicScanActivity"
+            android:label="@string/title_activity_micro_blog_original_pic_scan" >
+        </activity>
+        <activity android:name="com.neekle.kunlunandroid.screens.AccountRegisterActivity" >
+        </activity>
+
+        <receiver android:name="com.neekle.kunlunandroid.updateapp.ReplaceBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".updateapp.AppUpgradeService"
+            android:enabled="true" >
+        </service>
+
+        <activity android:name="com.neekle.kunlunandroid.screens.PasswordResetActivity" >
+        </activity>
+        <activity android:name="com.neekle.kunlunandroid.screens.MeActivity" >
+        </activity>
+        <activity android:name="com.neekle.kunlunandroid.screens.MePersonalInfoActivity" >
+        </activity>
+        <activity android:name="com.neekle.kunlunandroid.screens.MeMyAccountActivity" >
+        </activity>
+        <activity android:name="com.neekle.kunlunandroid.screens.MeQRCodeActivity" >
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.MessageChatSettingActivity"
+            android:label="@string/title_activity_message_chat_setting" >
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.SearchRecordActivity"
+            android:label="@string/title_activity_search_huddle_record" >
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.HuddleRecordsActivity"
+            android:label="@string/title_activity_huddle_records" >
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.MessageChatRecordsActivity"
+            android:label="@string/title_activity_message_chat_records" >
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screen.microblogpic.MicroBlogPicInfoActivity"
+            android:label="@string/title_activity_micro_blog_pic_info" >
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.MicroBlogPicInfoCommentActivity"
+            android:label="@string/title_activity_micro_blog_pic_info_coment" >
+        </activity>
+        <activity
+            android:name="com.neekle.kunlunandroid.screens.MicroBlogCommentActivity"
+            android:label="@string/title_activity_micro_blog_comment" >
+        </activity>
+        <service android:name=".presenter.common.NotificationService"></service>
+        <service android:name=".util.AppStatusService"></service>
+    </application>
+
+    <!-- needed by doubango start -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RAISED_THREAD_PRIORITY" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.audio.low_latency"
+        android:required="false" />
+    <!-- needed by doubango end -->
+
+</manifest>

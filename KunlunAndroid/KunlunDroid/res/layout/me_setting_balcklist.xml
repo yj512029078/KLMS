@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navpage" >
+
+    <include
+        android:id="@+id/relati_top"
+        layout="@layout/cm_top_bar" />
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relati_top"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:horizontalSpacing="6dp"
+        android:numColumns="4"
+        android:verticalSpacing="6dp" />
+
+</RelativeLayout>

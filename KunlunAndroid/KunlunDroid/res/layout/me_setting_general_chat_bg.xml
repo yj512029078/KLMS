@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navpage" >
+
+    <include
+        android:id="@+id/relati_top"
+        layout="@layout/cm_top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relati_top"
+        android:fillViewport="true"
+        android:scrollbars="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/relati_font_and_bg_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relati_language"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="15dip" >
+
+                <RelativeLayout
+                    android:id="@+id/relati_select_bg_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cm_typical_item_bg_top"
+                    android:clickable="true"
+                    android:paddingBottom="8dip"
+                    android:paddingTop="8dip" >
+
+                    <TextView
+                        android:id="@+id/tv_select_bg_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/select_bg_pic"
+                        android:textColor="@color/lightgrey"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_select_bg_pic_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/more_identifier"
+                        android:textColor="@color/lightgrey"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relati_select_from_phone_gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/relati_select_bg_pic"
+                    android:background="@drawable/cm_typical_item_bg_bottom"
+                    android:clickable="true"
+                    android:paddingBottom="8dip"
+                    android:paddingTop="8dip" >
+
+                    <TextView
+                        android:id="@+id/tv_select_from_phone_gallery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/select_from_phone_gallery"
+                        android:textColor="@color/lightgrey"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_select_from_phone_gallery_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/more_identifier"
+                        android:textColor="@color/lightgrey"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relati_apply_it_to_allchat_circumstance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/relati_font_and_bg_info"
+                android:layout_alignRight="@id/relati_font_and_bg_info"
+                android:layout_below="@id/relati_font_and_bg_info"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/cm_typical_item_bg"
+                android:clickable="true"
+                android:paddingBottom="8dip"
+                android:paddingTop="8dip" >
+
+                <TextView
+                    android:id="@+id/tv_apply_it_to_allchat_circumstance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/apply_it_to_allchat_circumstance"
+                    android:textColor="@color/lightgrey"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

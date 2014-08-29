@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/relati_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/cm_top_bar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/relati_top" >
+
+        <FrameLayout
+            android:id="@+id/frame_call_remote_video"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="bottom|right"
+            android:background="@color/black"
+            android:gravity="bottom|right"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imgv_call_remote_video_secure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3px"
+                android:src="@drawable/tel_video_in_call_secure_16" >
+            </ImageView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_call_local_video_parent"
+            android:layout_width="94dp"
+            android:layout_height="94dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="4dp"
+            android:background="@drawable/tel_video_in_call_grad_whiterounded"
+            android:minHeight="90dp"
+            android:minWidth="90dp"
+            android:padding="4dp" >
+
+            <FrameLayout
+                android:id="@+id/frame_call_local_video"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center" >
+            </FrameLayout>
+        </FrameLayout>
+
+        <include
+            android:id="@+id/relati_tel_do_operation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/linear_tel_going_hint"
+            android:layout_marginRight="5dip"
+            android:layout_toLeftOf="@id/frame_call_local_video_parent"
+            layout="@layout/cm_tel_do_operation" />
+    </RelativeLayout>
+
+</RelativeLayout>

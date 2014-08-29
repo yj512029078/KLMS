@@ -1,0 +1,307 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navpage" >
+
+    <include
+        android:id="@+id/relati_top"
+        layout="@layout/cm_top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relati_top"
+        android:fillViewport="true"
+        android:scrollbars="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/relati_top_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="15dip" >
+
+                <RelativeLayout
+                    android:id="@+id/relati_rev_new_msg_remind"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cm_typical_item_bg_top"
+                    android:clickable="true"
+                    android:paddingBottom="8dip"
+                    android:paddingTop="8dip" >
+
+                    <TextView
+                        android:id="@+id/tv_rev_new_msg_remind"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/rev_new_msg_remind"
+                        android:textColor="@color/lightgrey"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_rev_new_msg_remind"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/cm_checkbox_bg"
+                        android:checked="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relati_sound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/relati_rev_new_msg_remind"
+                    android:background="@drawable/cm_typical_item_bg_mid"
+                    android:clickable="true"
+                    android:paddingBottom="8dip"
+                    android:paddingTop="8dip" >
+
+                    <TextView
+                        android:id="@+id/tv_sound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sound"
+                        android:textColor="@color/lightgrey"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_sound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/cm_checkbox_bg"
+                        android:checked="false" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relati_vibrate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/relati_sound"
+                    android:background="@drawable/cm_typical_item_bg_bottom"
+                    android:clickable="true"
+                    android:paddingBottom="8dip"
+                    android:paddingTop="8dip" >
+
+                    <TextView
+                        android:id="@+id/tv_vibrate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/vibrate"
+                        android:textColor="@color/lightgrey"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_vibrate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/cm_checkbox_bg"
+                        android:checked="false" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relati_new_msg_remind_sound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/relati_top_info"
+                android:layout_alignRight="@id/relati_top_info"
+                android:layout_below="@id/relati_top_info"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/cm_typical_item_bg"
+                android:clickable="true"
+                android:paddingBottom="8dip"
+                android:paddingTop="8dip" >
+
+                <TextView
+                    android:id="@+id/tv_new_msg_remind_sound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/new_msg_remind_sound"
+                    android:textColor="@color/lightgrey"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_new_msg_remind_sound_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/keep_pace_with_system"
+                    android:textColor="@color/lightgrey"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relati_bg_msg_remind_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/relati_top_info"
+                android:layout_alignRight="@id/relati_top_info"
+                android:layout_below="@id/relati_new_msg_remind_sound"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/cm_typical_item_bg"
+                android:clickable="true"
+                android:paddingBottom="8dip"
+                android:paddingTop="8dip" >
+
+                <TextView
+                    android:id="@+id/tv_bg_msg_remind_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/bg_msg_remind_time"
+                    android:textColor="@color/lightgrey"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_bg_msg_remind_time_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/more_identifier"
+                    android:textColor="@color/lightgrey"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relati_function_msg_no_disturb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/relati_top_info"
+                android:layout_alignRight="@id/relati_top_info"
+                android:layout_below="@id/relati_bg_msg_remind_time"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/cm_typical_item_bg"
+                android:clickable="true"
+                android:paddingBottom="8dip"
+                android:paddingTop="8dip" >
+
+                <TextView
+                    android:id="@+id/tv_function_msg_no_disturb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/function_msg_no_disturb"
+                    android:textColor="@color/lightgrey"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_function_msg_no_disturb_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/more_identifier"
+                    android:textColor="@color/lightgrey"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relati_set_system_func_voice_and_vibrate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/relati_top_info"
+                android:layout_alignRight="@id/relati_top_info"
+                android:layout_below="@id/relati_function_msg_no_disturb"
+                android:layout_marginTop="5dip"
+                android:paddingBottom="8dip"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:paddingTop="8dip" >
+
+                <TextView
+                    android:id="@+id/tv_set_system_func_voice_and_vibrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/set_system_func_voice_and_vibrate"
+                    android:textColor="@color/lightgrey"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relati_friends_weibo_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/relati_top_info"
+                android:layout_alignRight="@id/relati_top_info"
+                android:layout_below="@id/relati_set_system_func_voice_and_vibrate"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/cm_typical_item_bg"
+                android:clickable="true"
+                android:paddingBottom="8dip"
+                android:paddingTop="8dip" >
+
+                <TextView
+                    android:id="@+id/tv_friends_weibo_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/friends_weibo_update"
+                    android:textColor="@color/lightgrey"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_friends_weibo_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/cm_checkbox_bg"
+                    android:checked="true"
+                    android:enabled="false" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relati_after_shut_no_hint_show_on_weibo_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/relati_top_info"
+                android:layout_alignRight="@id/relati_top_info"
+                android:layout_below="@id/relati_friends_weibo_update"
+                android:layout_marginTop="5dip"
+                android:paddingBottom="8dip"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:paddingTop="8dip" >
+
+                <TextView
+                    android:id="@+id/tv_after_shut_no_hint_show_on_weibo_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/after_shut_no_hint_show_on_weibo_icon"
+                    android:textColor="@color/lightgrey"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

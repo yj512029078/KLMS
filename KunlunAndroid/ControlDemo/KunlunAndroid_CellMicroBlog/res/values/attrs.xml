@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CellMicroBlogView">
+        <attr name="userState" format="integer" />
+        <attr name="userPhoto" format="reference" />
+        <attr name="name" format="reference|string" />
+        <attr name="nameColor" format="reference|color" />
+        <attr name="nameTextSize" format="dimension" />
+        <attr name="publishTime" format="reference|string" />
+        <attr name="publishTimeTextColor" format="reference|color" />
+        <attr name="publishTimeTextSize" format="dimension" />
+        <attr name="publishCity" format="reference|string" />
+        <attr name="publishCityTextColor" format="reference|color" />
+        <attr name="publishCityTextSize" format="dimension" />
+        <attr name="microBlogSignature" format="reference|string" />
+        <attr name="microBlogSignatureTextLine" format="integer" />
+        <attr name="microBlogSignatureTextColor" format="reference|color" />
+        <attr name="microBlogSignatureTextSize" format="dimension" />
+        <attr name="microBlogSignatureBg" format="reference|color" />
+        <attr name="microBlogStateDescri" format="reference|string" />
+        <attr name="microBlogStateDescriTextLine" format="integer" />
+        <attr name="microBlogStateDescriTextColor" format="reference|color" />
+        <attr name="microBlogStateDescriTextSize" format="dimension" />
+        <attr name="microBlogStateDescriBg" format="reference|color" />
+        <attr name="device" format="reference|string" />
+        <attr name="deviceTextColor" format="reference|color" />
+        <attr name="deviceTextSize" format="dimension" />
+        <attr name="popupMenuWidth" format="dimension" />
+    </declare-styleable>
+
+</resources>
